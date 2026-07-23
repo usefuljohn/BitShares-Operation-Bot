@@ -9,19 +9,16 @@ provides a `SKILL.md` file that describes its purpose, usage, and file layout.
 
 | Skill | Description |
 |---|---|
-| `dex-ops` | General BitShares operations — transfers, limit orders, credit offer management |
+| `dex-ops` | General BitShares operations — transfers, limit orders, asset queries |
 | `dex-pools` | LP yield calculations, pool stats, TVL tracking |
 | `dex-router` | Multi-hop path finding between assets via liquidity pools |
-| `dex-credit` | Credit offer funding engine, SOFR rate calculator, daemon, dashboard |
-| `dex-leverage` | Flash-loan leverage cascade (bootstrap positions from zero collateral) |
-| `dex-straddle` | Straddle limit order generation (paired buy/sell orders around a midpoint) |
 | `dex-arb` | Cross-pool ratio arbitrage (BTWTY.BTC vs XBTSX.BTC equilibrium balancing) |
 
 ### Market Domain — Intelligence & Strategy
 
 | Skill | Description |
 |---|---|
-| `market-intel` | Pyth Network prices, Kibana feed prices, price index management |
+| `market-intel` | Pyth Network prices, BitShares feed prices, price index management |
 | `market-strategy` | Autonomous strategy monitor — state collector, trigger engine, heartbeat integration |
 
 ### System Domain — Infrastructure

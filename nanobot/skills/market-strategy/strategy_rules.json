@@ -1,47 +1,15 @@
 {
-  "credit_fund": {
+  "price_index": {
     "enabled": true,
-    "trigger_offer_below_min_deal": true,
-    "trigger_sofr_drift_pct": 999,
-    "trigger_btc_price_movement_pct": 999,
-    "trigger_bts_price_movement_pct": 999,
-    "accounts": ["bit20", "gringotts", "twentix"]
+    "trigger_btc_price_movement_pct": 2.0,
+    "trigger_bts_price_movement_pct": 5.0
   },
-  "cascade": {
+  "arbitrage": {
     "enabled": true,
-    "target_price_bts_usd": 0.0011,
-    "account": "johnr",
-    "target_pool": "1.19.48",
-    "offer_id": "1.21.542"
-  },
-  "straddle": {
-    "enabled": true,
-    "refresh_interval_hours": 6,
-    "min_delta_from_execution_pct": 2.0,
-    "markets": {
-      "BTC": ["BTWTY.BTC/IOB.XRP", "BTWTY.BTC/XBTSX.XAUT", "BTWTY.BTC/XBTSX.A"],
-      "XRP": ["IOB.XRP/XBTSX.USDT"],
-      "XAUT": ["XBTSX.XAUT/XBTSX.USDT"]
-    },
-    "fuel_config": {
-      "BTWTY.BTC/XBTSX.A": {
-        "offer_id": "1.21.667",
-        "lp_id": "1.19.531"
-      }
-    },
-    "account": "johnr",
-    "default_spread_pct": 2.0,
-    "default_size": {
-      "BTWTY.BTC/IOB.XRP": 0.05,
-      "BTWTY.BTC/XBTSX.XAUT": 0.05,
-      "BTWTY.BTC/XBTSX.A": null,
-      "IOB.XRP/XBTSX.USDT": 500,
-      "XBTSX.XAUT/XBTSX.USDT": 0.5
-    }
+    "min_profit_pct": 0.5
   },
   "cooldowns": {
-    "credit_fund_min_interval_minutes": 60,
-    "cascade_min_interval_minutes": 360,
-    "straddle_min_interval_minutes": 120
+    "price_index_min_interval_minutes": 60,
+    "arbitrage_min_interval_minutes": 15
   }
 }
