@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+devel/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# WebUI dependencies & temp build files
+webui/node_modules/
+webui/.vite/
+webui/dist/
+
+# IMPORTANT: Keep nanobot/web/dist tracked for package distribution!
+!nanobot/web/dist/
